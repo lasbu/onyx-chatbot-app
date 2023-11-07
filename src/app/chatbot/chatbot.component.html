@@ -1,10 +1,26 @@
- <div class="chat-container">
-    <div *ngFor="let message of chatMessages" [ngClass]="message.role">
-      {{ message.content }}
+<div class="chat-body">
+  <div class="chat-container">
+    <div
+      *ngFor="let message of chatMessages"
+      class="message-box"
+      [ngClass]="message.role"
+    >
+      <img src="assets/images/bot_icon.png" class="bot-icon" />
+      <div class="message-text">{{ message.content }}</div>
+      <img src="assets/images/user_icon.png" class="user-icon" />
+    </div>
+    <div *ngIf="isLoading" class="bot-loading">
+      <img src="assets/images/bot_icon.png" class="bot-icon" />
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
     </div>
   </div>
-  
+
   <div class="input-container">
+    <img src="assets/images/user_icon.png" class="user-icon" />
     <input [(ngModel)]="userMessage" placeholder="Enter your message" />
     <button (click)="sendMessage()">Send</button>
   </div>
+</div>

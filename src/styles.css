@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+
+@import "open-props/style";
+
+body{
+    line-height: var(--font-lineheight-1);
+    font-size: var(--font-size-fluid-1);
+    font-weight: var(--font-weight-4);
+    font-family: var(--font-sans);
+    background-color: var(--gray-2);
+}
