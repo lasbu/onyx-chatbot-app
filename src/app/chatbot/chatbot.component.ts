@@ -27,7 +27,7 @@ export class ChatbotComponent {
       .sendMessage(this.userMessage)
       .subscribe((response) => {
         this.isLoading = false;
-        this.assistantReply = response.reply;
+        this.assistantReply = response;
         this.chatMessages.push({
           role: 'assistant',
           content: this.assistantReply,
