@@ -1,14 +1,13 @@
 .header{
   display: flex;
   gap: 15px;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 
 }
 h1{
   font-size: var(--font-size-fluid-3);
-  color: var(--indigo-8)
+  color: var(--blue-onyx)
 }
 img{
-  height: 150px;
-  width: 150px;
+  height: 100px;
 }

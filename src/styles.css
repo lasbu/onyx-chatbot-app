@@ -1,10 +1,15 @@
 
 @import "open-props/style";
 
+:root {
+  --blue-onyx: #336EB4;
+}
+
 body{
     line-height: var(--font-lineheight-1);
     font-size: var(--font-size-fluid-1);
     font-weight: var(--font-weight-4);
     font-family: var(--font-sans);
     background-color: var(--gray-2);
+    margin: 2rem;
 }

@@ -5,12 +5,12 @@
       class="message-box"
       [ngClass]="message.role"
     >
-      <img src="assets/images/bot_icon.png" class="bot-icon" />
+      <img src="assets/images/bot2_icon.png" class="bot-icon" />
       <div class="message-text">{{ message.content }}</div>
-      <img src="assets/images/user_icon.png" class="user-icon" />
+      <img src="assets/images/user2_icon.png" class="user-icon" />
     </div>
     <div *ngIf="isLoading" class="bot-loading">
-      <img src="assets/images/bot_icon.png" class="bot-icon" />
+      <img src="assets/images/bot2_icon.png" class="bot-icon" />
       <span class="dot"></span>
       <span class="dot"></span>
       <span class="dot"></span>
@@ -19,7 +19,7 @@
   </div>
 
   <div class="input-container">
-    <img src="assets/images/user_icon.png" class="user-icon" />
+    <img src="assets/images/user2_icon.png" class="user-icon" />
     <input [(ngModel)]="userMessage" placeholder="Enter your message" />
     <button (click)="sendMessage()">Send</button>
   </div>
