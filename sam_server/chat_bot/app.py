@@ -40,7 +40,7 @@ def lambda_handler(event, context):
 
     dburi = "sqlite:///hackathon.db"
     db = SQLDatabase.from_uri(dburi)
-    llm = OpenAI(temperature=0, openai_api_key="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")
+    llm = OpenAI(temperature=0, openai_api_key="YOUR_API_KEY")
 
     db_chain = SQLDatabaseChain(llm=llm, database=db, verbose=True)
     response = db_chain.run(query)
